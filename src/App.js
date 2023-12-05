@@ -1,6 +1,8 @@
 
 import Header from './components/Header/Header'
 import Homepage from './pages/Homepage/Homepage'
+import Login from './Login/login'
+import SelectMember from './Login/selectmember'
 import BuyingPaper from './pages/BuyingPaper/BuyingPaper'
 import HistoryList from './pages/HistoryList/HistoryList'
 import UploadFile from './pages/UploadFile/UploadFile'
@@ -14,7 +16,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <Header role='admin' />
+      {/* <Header role='admin' />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/LichSuIn" element={<HistoryList />} />
@@ -24,7 +26,8 @@ function App() {
         <Route path="/QuanLiMayIn" element={<ManagePrinter />} />
       </Routes>
       
-      <Footer />
+      <Footer /> */}
+      <Login />
     </>
   );
 }
